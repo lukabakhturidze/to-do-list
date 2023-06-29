@@ -68,7 +68,7 @@ main{
 }
 .main-form > .input-for-add{
     width: 40em;
-    padding: 1em 1.5em;
+    padding: 1em 7em 1em 1.5em;
     border-radius: 30px;
     background-color: var(--background-gray);
 }
@@ -95,6 +95,7 @@ main{
     row-gap: 1em;
 }
 .to-do-element{
+    align-items: center;
     padding: 1em 2%;
     background-color: var(--background-gray);
     border-radius: 30px;

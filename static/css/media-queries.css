@@ -1,0 +1,88 @@
+:root{
+    --tablet-larger-text-font-size: 25px;
+    --tablet-larger-text-line-height: 30px;
+    --tablet-standard-text-font-size: 15px;
+    --tablet-standard-text-line-height: 20px;
+    --tablet-small-text-font-size: 15px;
+    --tablet-small-text-line-height: 24px;
+
+    --mobile-larger-text-font-size: 23px;
+    --mobile-larger-text-line-height: 27px;
+    --mobile-standard-text-font-size: 13px;
+    --mobile-standard-text-line-height: 27px;
+    --mobile-small-text-font-size: 12px;
+    --mobile-small-text-line-height: 24px;
+}
+@media(max-width: 768px)
+{
+    /* for common tags> */
+    .larger-text-size{
+        font-size: var(--tablet-larger-text-font-size);
+        line-height: var(--tablet-larger-text-line-height);
+    }
+    .standard-text-size{
+        font-size: var(--tablet-standard-text-font-size);
+        line-height: var(--tablet-standard-text-line-height);
+    }
+    .small-text-size{
+        font-size: var(--tablet-small-text-font-size);
+        line-height: var(--tablet-small-text-line-height);
+    }
+    /* <for common tags */
+    main{
+        padding: 2em 0.5em;
+    }
+    .main-form > .input-for-add{
+        width: 36em;
+        padding: 1em 6em 1em 1.5em;
+    }
+    .main-form > .add-button{
+        height: 100%;
+        padding: 0 2em;
+    }
+    .to-do-element{
+        padding: 0.8em 2.5%;
+    }
+    .remove-button{
+        width: 20px;
+        height: 20px;
+    }
+    .remove-button-line{
+        height: 22px;
+    }
+}
+@media(max-width: 576px)
+{
+    /* for common tags> */
+    .larger-text-size{
+        font-size: var(--mobile-larger-text-font-size);
+        line-height: var(--mobile-larger-text-line-height);
+    }
+    .standard-text-size{
+        font-size: var(--mobile-standard-text-font-size);
+        line-height: var(--mobile-standard-text-line-height);
+    }
+    .small-text-size{
+        font-size: var(--mobile-small-text-font-size);
+        line-height: var(--mobile-small-text-line-height);
+    }
+    /* <for common tags */
+}
+@media(max-width: 476px)
+{
+    .main-form > .input-for-add{
+        width: 28em;
+    }
+}
+@media(max-width: 371px)
+{
+    main{
+        width: 95%;
+    }
+    .main-form{
+        width: 100%;
+    }
+    .main-form > .input-for-add{
+        width: 100%;
+    }
+}
