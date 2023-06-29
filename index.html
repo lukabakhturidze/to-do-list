@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <title>Document</title>
+</head>
+<body class="display-flex justify-content-center">
+    <main class="display-flex flex-direction-column">
+        <h1 class="larger-text-size">To-Do-List</h1>
+        <div class="outer-wrapper display-flex flex-direction-column align-items-center">
+            <form class="main-form">
+                <input type="text" name="input-for-add" placeholder="Type your to-do" class="input-for-add small-text-size">
+                <button type="reset" class="add-button small-text-size">Add</button>
+            </form>
+            <div class="warning small-text-size">you must type more than 4 symbols</div>
+            <ul class="to-do-list display-flex flex-direction-column">
+                <!-- <li class="to-do-element display-flex align-items-center justify-content-space-bteween">
+                    <div class="element-left-side display-flex">
+                        <div class="to-do-check"></div>
+                        <h3 class="to-do-info small-text-size">take a picture</h3>
+                    </div>
+                    <button class="remove-button">
+                        <div class="remove-button-line"></div>
+                        <div class="remove-button-line"></div>
+                    </button>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+    <script src="static/js/app.js"></script>
+</body>
+</html>

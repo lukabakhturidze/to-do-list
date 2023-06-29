@@ -1,0 +1,152 @@
+:root{
+    --larger-text-font-size: 30px;
+    --larger-text-line-height: 35px;
+    --standard-text-font-size: 20px;
+    --standard-text-line-height: 23px;
+    --small-text-font-size: 17px;
+    --small-text-line-height: 22px;
+    --primary-red: #c40000;
+    --primary-orange: #d68b00;
+    --background-gray: #efefef;
+    --signed-color: #52e0b1;
+}
+/* my library> */
+.display-flex{
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-space-bteween{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+/* <my library */
+/* for common tags> */
+.larger-text-size{
+    font-family: 'andada-extra-bold';
+    font-size: var(--larger-text-font-size);
+    line-height: var(--larger-text-line-height);
+    text-shadow: 2px 2px 5px var(--primary-orange);
+}
+.standard-text-size{
+    font-family: 'andadaPro-semiBold';
+    font-size: var(--standard-text-font-size);
+    line-height: var(--standard-text-line-height);
+    text-shadow: 2px 2px 5px var(--primary-orange);
+}
+.small-text-size{
+    font-family: 'rufina-regular';
+    font-size: var(--small-text-font-size);
+    line-height: var(--small-text-line-height);
+}
+/* <for common tags */
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right,var(--primary-orange) 30%, var(--primary-red));
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main{
+    height: fit-content;
+    margin-top: 20px;
+    padding: 3em 1em;
+    row-gap: 2em;
+    border-radius: 10px;
+    background-color: white;
+}
+.outer-wrapper{
+    row-gap: 1em;
+}
+.main-form{
+    position: relative;
+}
+.main-form > .input-for-add{
+    width: 40em;
+    padding: 1em 1.5em;
+    border-radius: 30px;
+    background-color: var(--background-gray);
+}
+.main-form > .add-button{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 98%;
+    padding: 0 2.5em;
+    background-image: linear-gradient(to bottom right,var(--primary-orange) 30%, var(--primary-red));
+    cursor: pointer;
+    border-radius: 30px;
+}
+.warning{
+    color: var(--primary-red);
+    display: none;
+}
+.warning.active{
+    display: block;
+}
+.to-do-list{
+    width: 100%;
+    row-gap: 1em;
+}
+.to-do-element{
+    padding: 1em 2%;
+    background-color: var(--background-gray);
+    border-radius: 30px;
+    border: 1px dashed black;
+    transition: all 0.2s linear;
+}
+.to-do-element.signed{
+    background-color: var(--signed-color);
+}
+.element-left-side{
+    column-gap: 0.6em;
+}
+.to-do-element .to-do-check{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s linear 0.3s;
+}
+.to-do-element.signed .to-do-check{
+    background-color: green;
+}
+.to-do-element.signed .element-left-side .to-do-info{
+    text-decoration-line: line-through;
+}
+.remove-button{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.remove-button:hover{
+    transform: scale(1.2);
+}
+.remove-button-line{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    height: 25px;
+    width: 4px;
+    background-color: black;
+    border-radius: 5px;
+}
+.remove-button-line:nth-child(1){
+    left: 45%;
+    transform: rotate(45deg);
+}
+.remove-button-line:nth-child(2){
+    left: 45%;
+    transform: rotate(-45deg);
+}
